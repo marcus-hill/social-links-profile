@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --main-bg-color: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+}
+
+html {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.social-card {
+    background-color: var(--grey800);
+    max-width: 32rem;
+    min-height: 42rem;
+    min-width: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.social-card img {
+    width: 88px;
+    height: 88px;
+    margin: 40px 0px 24px 0;
+    border-radius: 999%;
+}
+
+.social-card .name {
+    color: var(--white);
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.social-card .location {
+    color: var(--green);
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.social-card .description {
+    font-weight: 200;
+    margin: 24px 0;
+    font-size: 14px;
+    padding: 0 24px;
+}
+
+.social-card .description:before {
+    content: '\0022';
+}
+
+.social-card .description:after {
+    content: '\0022';
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+.social-links a {
+    margin-bottom: 16px;
+    padding: 12px 0;
+    background-color: var(--grey700);
+    border: none;
+    line-height: 150%;
+    color: var(--white);
+    font-weight: 600;
+    box-shadow: 0 4 4px 0 rgba(0,0,0,0.25);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: var(--green);
+    color: var(--grey700);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.social-links:last-child {
+    margin: 0;
+}
+
+@media (width < 560px) {
+    .social-card {
+        min-width: 80%;
+    }
+}
+
+@media (560px < width < 1000px) {
+    .social-card {
+        min-width: 32rem;
+    }
+}
+
+@media (1000px < width) {
+    .social-card {
+        min-width: 27rem;
+    }
+}
+
+.attribution {
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: var(--green);
+}
