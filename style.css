@@ -63,24 +63,26 @@ body {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     min-height: 100vh;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
 }
 
+main {
+    max-width: 30rem;
+    width: 100%;
+    margin: auto;
+}
 
 .social-card {
     display: block;
     background-color: var(--grey800);
-    max-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 25px;
     border-radius: 12px;
-    width: 100%;
-    margin: 1px;
 }
 
 .avatar {
@@ -96,18 +98,21 @@ body {
     line-height: 150%;
     font-weight: 500;
     margin-bottom: 4px;
+    text-align: center;
 }
 
 .location {
     color: var(--green);
     line-height: 150%;
     font-weight: 600;
+    text-align: center;
 }
 
 .description {
     margin: 24px 0;
     padding: 0 24px;
     color: var(--white);
+    text-align: center;
 }
 
 .description:before {
