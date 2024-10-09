@@ -62,23 +62,25 @@ table {
 body {
     background-color: var(--main-bg-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    flex-direction: column;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
 }
 
+
 .social-card {
+    display: block;
     background-color: var(--grey800);
-    max-width: 23rem;
-    width: 100%;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
-    padding: 10px;
+    width: 100%;
+    margin: 1px;
 }
 
 .avatar {
@@ -117,7 +119,7 @@ body {
 }
 
 .social-links {
-    width: 85%;
+    width: 90%;
 }
 
 .social-link {
